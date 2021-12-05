@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/MarathonEnvs/Scenes/MarathonEnvs.unity
+    guid: 5c94d8324b4a24bc6a6e46a649973baa
+  - enabled: 0
+    path: Assets/DanceAgent/Scenes/MotorTestScene2.unity
+    guid: 894dbb4b07522d040b386350f2703190
+  - enabled: 1
+    path: Assets/DanceMirror/Scenes/test/UITest.unity
+    guid: 91b9585c1fce5744fa41972ce4ac0d29
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 6d17da329ed3ef34cb3628f7fe39662e,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e8e7a63d7b8fe624b94751105da3d07b,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5fbc79ab9c82e984e9ffe2334571718c,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: ad2002481a0748a4abdfbddc530400c7,
+      type: 2}
