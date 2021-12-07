@@ -1,4 +1,12 @@
-# Vive client for the avatar network syncronization using mirror
+# Vive client for the avatar network synchronization using Mirror
 
-You need to install the OpenVR Plugin from here:
-https://github.com/ValveSoftware/unity-xr-plugin/releases/download/v1.1.4/com.valvesoftware.unity.openvr-1.1.4.tgz
+The repository contains a submodule shared with the server and needs to be cloned recursively:
+
+```
+
+git clone git@github.com:CarouselDancing/vive-sync-client.git --recursive
+
+```
+
+
+
