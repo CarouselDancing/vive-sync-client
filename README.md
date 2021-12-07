@@ -10,3 +10,14 @@ git clone git@github.com:CarouselDancing/vive-sync-client.git --recursive
 
 Requires Unity version 2020.3.20f1.
 
+
+## Starting the client from the Editor
+
+The client will spawn an avatar in the scene driven by the headset and hand controllers.
+
+1. Open the scene Assets/VRAvatarClient/Scenes/VRClient.unity
+2. Set the target IP in the NetworkManager
+3. Press Play
+
+
+
