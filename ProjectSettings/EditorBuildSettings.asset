@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/MarathonEnvs/Scenes/MarathonEnvs.unity
-    guid: 5c94d8324b4a24bc6a6e46a649973baa
-  - enabled: 0
-    path: Assets/DanceAgent/Scenes/MotorTestScene2.unity
-    guid: 894dbb4b07522d040b386350f2703190
   - enabled: 1
-    path: Assets/DanceMirror/Scenes/test/UITest.unity
-    guid: 91b9585c1fce5744fa41972ce4ac0d29
+    path: Assets/VRAvatarClient/Scenes/VRClient.unity
+    guid: 0638a4911f671a44da34d6ccac24afc8
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 6d17da329ed3ef34cb3628f7fe39662e,
       type: 2}
