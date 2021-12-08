@@ -15,9 +15,14 @@ Requires Unity version 2020.3.20f1.
 
 The client will spawn an avatar in the scene driven by the headset and hand controllers.
 
-1. Open the scene Assets/VRAvatarClient/Scenes/VRClient.unity
-2. Set the target IP in the NetworkManager
+1. Open the scene Assets\VRAvatarClient\Scenes\VRClient.unity
+2. Set the target URL in the file Assets\StreamingAssets\config.json
 3. Press Play
 
+
+
+## Configuration of build executable
+
+The configuration file will be located in the directory vive_sync_client_Data\StreamingAssets\config.json
 
 
