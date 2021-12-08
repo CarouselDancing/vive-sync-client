@@ -21,8 +21,8 @@ The client will spawn an avatar in the scene driven by the headset and hand cont
 
 
 
-## Configuration of build executable
+## Configuration of built executable
 
-The configuration file will be located in the directory vive_sync_client_Data\StreamingAssets\config.json
+The configuration file will be located in the directory <build-dir>\vive_sync_client_Data\StreamingAssets\config.json
 
 
