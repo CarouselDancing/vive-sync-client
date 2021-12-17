@@ -301,8 +301,13 @@ PrefabInstance:
         type: 3}
       propertyPath: playerPrefab
       value: 
-      objectReference: {fileID: 7845951327085506187, guid: f33b42135e780c042b0b13251f137351,
+      objectReference: {fileID: 7845951327085506187, guid: aa519ca264b14f4429f3ac337e291664,
         type: 3}
+    - target: {fileID: 2312243950608950800, guid: c000fcda105b01b4fa814099aaa154e6,
+        type: 3}
+      propertyPath: networkAddress
+      value: ' 172.16.7.160'
+      objectReference: {fileID: 0}
     - target: {fileID: 2312243950608950803, guid: c000fcda105b01b4fa814099aaa154e6,
         type: 3}
       propertyPath: m_RootOrder
@@ -567,7 +572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b04119fc64cd6048b4723140026776e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  configFile: {fileID: 4900000, guid: 71ddc64c13be9a64f8b9922932ccfd68, type: 3}
   config:
     url: localhost
     port: 7777

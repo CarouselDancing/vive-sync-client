@@ -99,7 +99,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 3
+  fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -148,9 +148,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 5749520650051515858, guid: 5fbc79ab9c82e984e9ffe2334571718c, type: 2}
-  - {fileID: 11400000, guid: ad2002481a0748a4abdfbddc530400c7, type: 2}
-  - {fileID: 3798644237838285990, guid: e8e7a63d7b8fe624b94751105da3d07b, type: 2}
   - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
