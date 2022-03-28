@@ -12,7 +12,7 @@ public class DeviceVisManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bool activate = GlobalGameManager.GetInstance().config.activateDebugVis;
+        bool activate = GlobalGameState.GetInstance().config.activateDebugVis;
         if (!activate) return;
         for (int i = 1; i< 17; i++)
         {
@@ -21,7 +21,7 @@ public class DeviceVisManager : MonoBehaviour
     }
     void GenerateDeviceVis(int deviceID)
     {
-        var o = GameObject.Instantiate(deviceVisPrefab);
+        var o = GameObject.Instantiate(deviceVisPrefab, transform);
         o.name = "Device: " + deviceID.ToString();
         var t = o.GetComponent<SteamVR_TrackedObject>();
         t.SetDeviceIndex(deviceID);
