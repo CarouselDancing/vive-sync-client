@@ -16,8 +16,9 @@ Requires Unity version 2020.3.20f1.
 The client will spawn an avatar in the scene driven by the headset and hand controllers.
 
 1. Open the scene Assets\VRAvatarClient\Scenes\VRClient.unity
-2. Set the target URL in the file Assets\StreamingAssets\config.json
-3. Press Play
+2. Set the target URL and configure the trackers in the file Assets\StreamingAssets\config.json
+3. To get the right device IDs for the trackers you can set activateDebugVis to true. This will enable a debug mode that shows all devices and their ID instead of connecting to a server.
+4. Press Play
 
 
 
