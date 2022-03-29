@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GameObject.Instantiate(networkClient);
+            var o = GameObject.Instantiate(networkClient);
+            o.AddComponent<AutoconnectClient>();
         }
     }
 
