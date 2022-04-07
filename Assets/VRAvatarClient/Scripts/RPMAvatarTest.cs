@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolf3D.ReadyPlayerMe.AvatarSDK;
+using ReadyPlayerMe;
 
 
 public class RPMAvatarTest : MonoBehaviour
