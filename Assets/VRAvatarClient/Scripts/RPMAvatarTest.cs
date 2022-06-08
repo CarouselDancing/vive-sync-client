@@ -53,9 +53,9 @@ public class RPMAvatarTest : MonoBehaviour
     void SetupRig(CharacterRigConfig config, GameObject avatar)
     {
         InitVRRig vrRig = avatar.AddComponent<InitVRRig>();
-        vrRig.Setup(config, avatar);
+        vrRig.SetupAvatarController(config, avatar);
         var animator = avatar.GetComponent<Animator>();
-        vrRig.Init();
+        vrRig.ConnectTrackers();
         for (int i = 0; i < animator.transform.childCount; i++)
         {
             var t = animator.transform.GetChild(i);
