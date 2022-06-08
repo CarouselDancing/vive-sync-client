@@ -4,3 +4,6 @@
 [submodule "Assets/FigureGenerator"]
 	path = Assets/FigureGenerator
 	url = git@github.com:CarouselDancing/figure-generator.git
+[submodule "Assets/BaselineAgent"]
+	path = Assets/BaselineAgent
+	url = git@github.com:CarouselDancing/baseline-agent.git
