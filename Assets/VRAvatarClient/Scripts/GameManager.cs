@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using Carousel.BaselineAgent;
 
 public class GameManager : MonoBehaviour
 {
-    public GlobalGameState state;
+    public GlobalAgentGameState state;
     public GameObject networkClient;
     public GameObject offlineTest;
     VRRigConfig trackerConfig;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         trackerConfig = Camera.main.GetComponent<VRRigConfig>();
-        state = GlobalGameState.GetInstance();
+        state = GlobalAgentGameState.GetInstance();
         ConfigureRig();
 
         if (state.config.activateDebugVis)

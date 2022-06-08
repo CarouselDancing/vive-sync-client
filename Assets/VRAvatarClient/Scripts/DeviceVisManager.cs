@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using UnityEngine.UI;
+using Carousel.BaselineAgent;
 
 
 public class DeviceVisManager : MonoBehaviour
@@ -12,7 +13,7 @@ public class DeviceVisManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bool activate = GlobalGameState.GetInstance().config.activateDebugVis;
+        bool activate = GlobalAgentGameState.GetInstance().config.activateDebugVis;
         if (!activate) return;
         for (int i = 1; i< 17; i++)
         {
