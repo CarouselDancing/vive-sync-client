@@ -24,6 +24,41 @@ public class UserMenu : MonoBehaviour
    public void SpawnAgent(){
        Debug.Log("spawn agent");
        _userAvatar?.SpawnAgent();
+   }   
+   
+   public void ActivateAgent(){
+       Debug.Log("ActivateAgent");
+       _userAvatar?.ActivateAgent();
+   } 
+   
+   public void DeactivateAgent(){
+       Debug.Log("ActivateAgent");
+       _userAvatar?.DeactivateAgent();
+   } 
+
+   public void ActivateFollower(){
+       Debug.Log("ActivateFollower");
+       _userAvatar?.ActivateFollower();
+   }    
+
+   public void DeactivateFollower(){
+       Debug.Log("DeactivateFollower");
+       _userAvatar?.DeactivateFollower();
+   } 
+   
+   public void ActivatePairDance(){
+       Debug.Log("ActivatePairDance");
+       _userAvatar?.ActivatePairDance();
+   } 
+
+   public void DeactivatePairDance(){
+       Debug.Log("ActivatePairDance");
+       _userAvatar?.DeactivatePairDance();
+   } 
+
+   public void ToggleAgentDancing(){
+       Debug.Log("ToggleAgentDancing");
+       _userAvatar?.ToggleAgentDancing();
    } 
 
    public void ExitGame(){

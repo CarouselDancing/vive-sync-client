@@ -22,19 +22,13 @@ public class WristMenu : MonoBehaviour
   
 
     
-  void Start()
-  {  
-      rightController = transform.Find("RightController").gameObject;
-      leftController = transform.Find("LeftController").gameObject;
-     
-  }
- 
-  
   void Update(){
       if (!initialized) Init();
   }
 
   public void Init(){
+      rightController = transform.Find("RightController").gameObject;
+      leftController = transform.Find("LeftController").gameObject;
       rightController.transform.GetComponent<SteamVR_LaserPointer>().enabled= false;
       leftController.transform.GetComponent<SteamVR_LaserPointer>().enabled= false;
       rightChild = transform.Find("RightController/New Game Object").gameObject;
