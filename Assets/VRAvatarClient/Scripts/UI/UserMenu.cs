@@ -45,7 +45,7 @@ public class UserMenu : MonoBehaviour
        Debug.Log("DeactivateFollower");
        _userAvatar?.DeactivateFollower();
    } 
-   
+
    public void ActivatePairDance(){
        Debug.Log("ActivatePairDance");
        _userAvatar?.ActivatePairDance();
@@ -60,6 +60,10 @@ public class UserMenu : MonoBehaviour
        Debug.Log("ToggleAgentDancing");
        _userAvatar?.ToggleAgentDancing();
    } 
+   public void RemoveAgent(){
+       Debug.Log("RemoveAgent");
+       _userAvatar?.RemoveAgent();
+   }
 
    public void ExitGame(){
          Application.Quit();
