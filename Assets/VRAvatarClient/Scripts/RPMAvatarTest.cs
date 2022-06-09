@@ -56,14 +56,5 @@ public class RPMAvatarTest : MonoBehaviour
         vrRig.SetupAvatarController(config, avatar);
         var animator = avatar.GetComponent<Animator>();
         vrRig.ConnectTrackers();
-        for (int i = 0; i < animator.transform.childCount; i++)
-        {
-            var t = animator.transform.GetChild(i);
-            if (t.name == "Armature")
-            {
-                t.rotation = Quaternion.Euler(new Vector3(-90, 0, 0));
-                break;
-            }
-        }
     }
 }
