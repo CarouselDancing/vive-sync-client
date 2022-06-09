@@ -396,6 +396,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &552570133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6298746226279448617, guid: c50afa930bea7e34c84411a2584ff1bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2683799976612752752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646450697
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +865,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965352186}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 339381197}
@@ -909,6 +915,7 @@ MonoBehaviour:
   laserPointers:
   - {fileID: 230483823}
   - {fileID: 2683799976612752758}
+  currentButton: {fileID: 0}
 --- !u!114 &965352192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,6 +1191,12 @@ MonoBehaviour:
   OnRelease:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &1232258549 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6298746227226921695, guid: c50afa930bea7e34c84411a2584ff1bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2683799976612752752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1232258550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,6 +1269,28 @@ MonoBehaviour:
   OnRelease:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1232258554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232258547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e663c002cf14b41966d2328c136bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    actionPath: /actions/default/in/steer
+    needsReinit: 0
+  inputSource: 2
+  axis: {x: 0, y: 0}
+  direction: {x: 0, y: 0, z: 0}
+  scale: 0.01
+  locomotionOffset: {x: 0, y: 0, z: 0}
+  root: {fileID: 1232258549}
+  head: {fileID: 552570133}
 --- !u!1 &1280359059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1834,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1849420258529854019, guid: c50afa930bea7e34c84411a2584ff1bd,
+        type: 3}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 1232258549}
+    - target: {fileID: 3649344423078595222, guid: c50afa930bea7e34c84411a2584ff1bd,
+        type: 3}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 1232258549}
+    - target: {fileID: 5916345275358881327, guid: c50afa930bea7e34c84411a2584ff1bd,
+        type: 3}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 1232258549}
     - target: {fileID: 6298746226125920062, guid: c50afa930bea7e34c84411a2584ff1bd,
         type: 3}
       propertyPath: m_Enabled
