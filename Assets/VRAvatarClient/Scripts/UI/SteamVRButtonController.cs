@@ -10,11 +10,11 @@ public class SteamVRButtonController : MonoBehaviour
     public SteamVR_Action_Boolean action;
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;//which controller
  
-        [Tooltip("Event when the button starts being pressed")]
-        public UnityEvent OnPress;
- 
-        [Tooltip("Event when the button is released")]
-        public UnityEvent OnRelease;
+    [Tooltip("Event when the button starts being pressed")]
+    public UnityEvent OnPress = new UnityEvent();
+
+    [Tooltip("Event when the button is released")]
+    public UnityEvent OnRelease = new UnityEvent();
 
 
     // to check whether it's being pressed
