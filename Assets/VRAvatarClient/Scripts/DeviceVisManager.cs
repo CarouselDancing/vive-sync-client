@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
 using UnityEngine.UI;
 using Carousel.BaselineAgent;
 
@@ -24,8 +23,8 @@ public class DeviceVisManager : MonoBehaviour
     {
         var o = GameObject.Instantiate(deviceVisPrefab, transform);
         o.name = "Device: " + deviceID.ToString();
-        var t = o.GetComponent<SteamVR_TrackedObject>();
-        t.SetDeviceIndex(deviceID);
+        //var t = o.GetComponent<SteamVR_TrackedObject>();
+       // t.SetDeviceIndex(deviceID);
         var text = o.GetComponentInChildren<Text>();
         text.text = o.name;
     }

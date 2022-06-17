@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
+//using Valve.VR;
 using Carousel.BaselineAgent;
 
 public class GameManager : MonoBehaviour
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         trackerConfig = Camera.main.GetComponent<VRRigConfig>();
-        state = GlobalAgentGameState.GetInstance();
+        state = (GlobalAgentGameState) GlobalAgentGameState.GetInstance();
         ConfigureRig();
 
         if (state.config.activateDebugVis)
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void ConfigureTracker(TrackerTarget tracker, TrackerConfig config)
     {
-        var ht = trackerConfig.hipTrackerTarget.GetComponent<SteamVR_TrackedObject>();
+        /*var ht = trackerConfig.hipTrackerTarget.GetComponent<SteamVR_TrackedObject>();
         var _offset = config.posOffset;
         tracker.offset = new Vector3(_offset[0], _offset[1], _offset[2]);
         var _rotOffset = config.rotOffset;
@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         var t = tracker.GetComponent<SteamVR_TrackedObject>();
         t.SetDeviceIndex(config.deviceID);
         Debug.Log("set device id" + name + ": " + config.deviceID.ToString());
+        */    
     }
 
 

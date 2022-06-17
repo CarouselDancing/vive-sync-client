@@ -1,0 +1,262 @@
+{
+    "name": "ViveTrackerInput",
+    "maps": [
+        {
+            "name": "ViveTrackeWaist",
+            "id": "78fbaceb-b7ad-42f6-ad27-7bcc69f8f493",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "dd05ec41-a669-44ae-b52d-9034bb75f9a1",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "20156c6e-afca-43df-b181-d0fb9944f45f",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9abc45d1-43ec-4080-94ce-d62717b4504a",
+                    "path": "<XRViveTracker>{Waist}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d7788e6-3113-4a70-89b7-f29b23e970e7",
+                    "path": "<XRViveTracker>{Waist}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ViveTrackerLKnee",
+            "id": "1884a06c-e43c-460f-95a2-84a835a1ace3",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "1030856d-f4ee-4040-a5b5-67a8b62a3272",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "e38b4245-f466-4129-ba2b-df54ed1cb544",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d71d7439-f8ab-46eb-b824-678118b632bd",
+                    "path": "<XRViveTracker>{Left Knee}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b7c2b16-df77-489e-92ad-5edb85523c8c",
+                    "path": "<XRViveTracker>{Left Knee}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ViveTrackerRKnee",
+            "id": "49e13291-78dc-4032-9b2b-2a972255aa9a",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "f01e3fad-d7b1-4cbd-bc95-a059a82dd5b0",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "f0bfd270-377b-48d9-8970-3c3c8b9b862e",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b98aeb84-4239-4283-a937-9535133a55e6",
+                    "path": "<XRViveTracker>{Right Knee}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6a2aeca-d444-4bba-8f99-6e114c18ea47",
+                    "path": "<XRViveTracker>{Right Knee}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ThumbStickLeft",
+            "id": "18901303-e451-4b48-b194-9fb17d808058",
+            "actions": [
+                {
+                    "name": "direction",
+                    "type": "Value",
+                    "id": "7e917c29-72ad-4cb9-95e8-c23f30eb98b1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f29ff61c-4eb8-4f42-9139-5c2350e1fe62",
+                    "path": "<XRController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ThumbStickRight",
+            "id": "8b581ebe-d3b3-4ea3-812c-fac07d48e2e8",
+            "actions": [
+                {
+                    "name": "direction",
+                    "type": "Value",
+                    "id": "e9abed30-ab8b-453a-bb74-4a0d11fa4801",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c4267277-28c6-495c-ac9f-04c933dd1951",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightTrigger",
+            "id": "a88e19ce-cfb9-46f4-959e-a8f370c8d5d8",
+            "actions": [
+                {
+                    "name": "trigger",
+                    "type": "Button",
+                    "id": "37daf052-4ad1-47c8-a379-d5d63bec25c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e4da6460-972c-494c-93ec-0b5fed79ca35",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LeftTrigger",
+            "id": "35f4d05f-c542-4b7b-8916-8d28cfa15292",
+            "actions": [
+                {
+                    "name": "trigger",
+                    "type": "Button",
+                    "id": "20f8cd17-d88f-4ea9-a720-dcf7e3e971ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dbd0582b-f216-4474-af4a-e4ada964a81d",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

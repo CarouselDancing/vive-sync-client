@@ -1835,22 +1835,58 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1096216961
-Rigidbody:
+--- !u!171741748 &1096216961
+ArticulationBody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096216960}
+  m_Enabled: 1
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_ParentAnchorPosition: {x: 0, y: 0, z: 0}
+  m_ParentAnchorRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_AnchorPosition: {x: 0, y: 0, z: 0}
+  m_AnchorRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_ComputeParentAnchor: 1
+  m_ArticulationJointType: 0
+  m_LinearX: 2
+  m_LinearY: 2
+  m_LinearZ: 2
+  m_SwingY: 2
+  m_SwingZ: 2
+  m_Twist: 2
+  m_XDrive:
+    lowerLimit: 0
+    upperLimit: 0
+    stiffness: 0
+    damping: 0
+    forceLimit: 3.4028235e+38
+    target: 0
+    targetVelocity: 0
+  m_YDrive:
+    lowerLimit: 0
+    upperLimit: 0
+    stiffness: 0
+    damping: 0
+    forceLimit: 3.4028235e+38
+    target: 0
+    targetVelocity: 0
+  m_ZDrive:
+    lowerLimit: 0
+    upperLimit: 0
+    stiffness: 0
+    damping: 0
+    forceLimit: 3.4028235e+38
+    target: 0
+    targetVelocity: 0
+  m_LinearDamping: 0.05
+  m_AngularDamping: 0.05
+  m_JointFriction: 0.05
+  m_Immovable: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetectionMode: 0
 --- !u!65 &1096216962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3336,6 +3372,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2683799976612752752}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8239161287322707886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8239161287322707885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0539eb3032280b14282275d4b7dec046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftController: {fileID: 8239161287354644673}
+  rightController: {fileID: 8239161288440494671}
+  commands: {fileID: 0}
 --- !u!4 &8239161287322707887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6298746227226921695, guid: c50afa930bea7e34c84411a2584ff1bd,
@@ -3349,15 +3400,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8239161287322707885}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bd70c4e02e363b4bb2e9d20d6b43309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   leftController: {fileID: 8239161287354644673}
   rightController: {fileID: 8239161288440494671}
-  leftRegistered: 0
-  rightRegistered: 0
+  leftGrabber: {fileID: 0}
+  rightGrabber: {fileID: 0}
 --- !u!1 &8239161287354644670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6298746227254629838, guid: c50afa930bea7e34c84411a2584ff1bd,
