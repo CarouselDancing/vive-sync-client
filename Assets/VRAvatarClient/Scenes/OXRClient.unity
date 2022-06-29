@@ -715,7 +715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1694,7 +1694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
@@ -1706,7 +1706,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: anyway what is going on
+  m_Text: debug info
 --- !u!222 &1033675258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1858,7 +1858,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Agent
+  m_Text: Toggle Follower
 --- !u!222 &1083748827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2224,7 +2224,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096216960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.565, y: 0.54879725, z: -1.134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2241,11 +2241,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096216960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 531ff2cd0f94cd64b85b93a33308a295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: 0
-  eraseRenderer: 0
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 0.11645913, g: 1, b: 0, a: 1}
+  speed: 2.55
+  blinkOnStart: 1
+  highlights: []
 --- !u!1 &1298321139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,7 +2427,7 @@ GameObject:
   - component: {fileID: 1442667304}
   - component: {fileID: 1442667303}
   m_Layer: 5
-  m_Name: SelectAgent
+  m_Name: ToggleFollower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2497,7 +2500,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1458956860}
         m_TargetAssemblyTypeName: UserMenu, Assembly-CSharp
-        m_MethodName: ActivateAgent
+        m_MethodName: ToggleFollower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
