@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRAvatarClient/Scenes/OXRClient.unity
-    guid: 8d1c26e94aeb65d4b9fe5f2ef795832b
+    path: Assets/BaselineAgent/Scenes/base.unity
+    guid: 90d9589bcd174664b8d9665b9b0cee12
+  - enabled: 1
+    path: Assets/VRAvatarClient/Scenes/OXRClientScene.unity
+    guid: e33b147f86347bd4289bfe0966165067
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 299405e7e4d474d449173d3fa0bbf700,
       type: 2}
