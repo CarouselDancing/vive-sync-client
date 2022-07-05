@@ -58,13 +58,22 @@
             ]
         },
         {
-            "name": "RightTrigger",
+            "name": "RightButtons",
             "id": "a88e19ce-cfb9-46f4-959e-a8f370c8d5d8",
             "actions": [
                 {
                     "name": "trigger",
                     "type": "Button",
                     "id": "37daf052-4ad1-47c8-a379-d5d63bec25c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "grip",
+                    "type": "Button",
+                    "id": "b983c4f8-2e06-4549-87a9-2c39af9124f0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -82,17 +91,37 @@
                     "action": "trigger",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "429c213f-d49b-4cf5-b0e2-9f708bc1b601",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "LeftTrigger",
+            "name": "LeftButtons",
             "id": "35f4d05f-c542-4b7b-8916-8d28cfa15292",
             "actions": [
                 {
                     "name": "trigger",
                     "type": "Button",
                     "id": "20f8cd17-d88f-4ea9-a720-dcf7e3e971ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "grip",
+                    "type": "Button",
+                    "id": "c398a7c9-978d-4fa7-a6cd-3021a404610c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -108,6 +137,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d08bf82-4f8b-46d9-b848-d1f1f8c1af87",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "grip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
