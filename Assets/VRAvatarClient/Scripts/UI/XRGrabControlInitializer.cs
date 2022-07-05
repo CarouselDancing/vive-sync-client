@@ -19,25 +19,30 @@ public class XRGrabControlInitializer : MonoBehaviour
     {
         var player = MirrorGameManager.Instance.player;
         if (player != null){
-            CreateInputMapping(player.leftGrabber);
-            CreateInputMapping(player.rightGrabber);
+            var userAvatarCommands = player.GetComponent<UserAvatarCommands> ();
+            CreateInputMapping(player.leftGrabber, userAvatarCommands);
+            CreateInputMapping(player.rightGrabber, userAvatarCommands);
             DestroyImmediate(this);
        }
         
     }
 
-    void CreateInputMapping(RBGrabber grabber){
+    void CreateInputMapping(RBGrabber grabber, UserAvatarCommands commands){
         var inputMapping = grabber.gameObject.AddComponent<XRInputActionController>();
+        
+        inputMapping.OnPress = new UnityEvent();
+        inputMapping.OnRelease = new UnityEvent();
+
         if (grabber.side == RBGrabber.Side.LEFT){
             inputMapping.inputAction = leftAction;
+            inputMapping.OnPress.AddListener(commands.GrabLeft);
+            inputMapping.OnRelease.AddListener(commands.ReleaseLeft);
         }else{
             inputMapping.inputAction = rightAction;
+            inputMapping.OnPress.AddListener(commands.GrabRight);
+            inputMapping.OnRelease.AddListener(commands.ReleaseRight);
 
         }
-        inputMapping.OnPress = new UnityEvent();
-        inputMapping.OnPress.AddListener(grabber.GrabObject);
-        inputMapping.OnRelease = new UnityEvent();
-        inputMapping.OnRelease.AddListener(grabber.ReleaseObject);
     }
 }
 
