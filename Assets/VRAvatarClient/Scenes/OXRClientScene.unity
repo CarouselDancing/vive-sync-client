@@ -779,9 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cda1f97e4809244e98f40f0976a529f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomConfig: {fileID: 0}
   debugMessage: {fileID: 1033675259}
-  networkManager: {fileID: 0}
   userMenu: {fileID: 1458956860}
   config:
     url: localhost
@@ -802,9 +800,6 @@ MonoBehaviour:
       posOffset: []
       rotOffset: []
     activateDebugVis: 0
-  host: 0
-  server: 0
-  client: 1
   player: {fileID: 0}
 --- !u!4 &523816896
 Transform:
