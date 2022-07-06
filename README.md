@@ -29,6 +29,6 @@ Pressing the left or right trigger opens a menu attached to the wrist. The menu 
 
 ## Configuration of built executable
 
-Currently remove because StreamingAssets did not work on the Quest.
+Currently removed because StreamingAssets did not work on the Quest.
 
 
