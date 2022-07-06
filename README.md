@@ -1,4 +1,4 @@
-# SteamVR client for the Synchronization of IKRig based Avatars using Mirror
+# Client for ViveTracker based Avatar Synchronization using Mirror
 
 The repository contains a submodule shared with the [server](https://github.com/CarouselDancing/vive-sync-server) and needs to be cloned recursively:
 
@@ -8,16 +8,15 @@ git clone git@github.com:CarouselDancing/vive-sync-client.git --recursive
 
 ```
 
-Requires Unity version 2020.3.20f1.
+Requires Unity version 2021.3.5f1.
 
 
 ## Starting the client from the Editor
 
-The client will spawn an avatar in the scene driven by the headset and hand controllers.
+The client will spawn an avatar in the scene driven by the headset, hand controllers and Vive Trackers.
 
-1. Open the scene Assets\VRAvatarClient\Scenes\VRClient_ui.unity
-2. Set the target URL and configure the trackers in the file Assets\StreamingAssets\config.json
-3. To get the right device IDs for the trackers you can set activateDebugVis to true. This will enable a debug mode that shows all devices and their ID instead of connecting to a server.
+1. Open the scene Assets\BaselineAgent\Scenes\main.unity
+2. Set the target URL and configure the trackers in the file Assets\Resources\config.json (tracker ids are ignored in OpenXR version)
 4. Press Play
 
 ## Controls
@@ -30,6 +29,6 @@ Pressing the left or right trigger opens a menu attached to the wrist. The menu 
 
 ## Configuration of built executable
 
-The configuration file will be located in the directory <build-dir>\vive_sync_client_Data\StreamingAssets\config.json
+Currently remove because StreamingAssets did not work on the Quest.
 
 
