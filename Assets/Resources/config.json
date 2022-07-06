@@ -7,5 +7,6 @@
 	"hipTracker" : {"deviceID": 8, "posOffset": [0,0,0], "rotOffset": [0,0,0]},
 	"leftFootTracker" : {"deviceID": 7, "posOffset": [0,0,0], "rotOffset": [230,180,0]},
 	"rightFootTracker" : {"deviceID": 8, "posOffset": [0,0,0], "rotOffset": [231,180,0]},
-	"activateDebugVis": false
+	"activateDebugVis": false,
+	"networkMode": "client"
 }
