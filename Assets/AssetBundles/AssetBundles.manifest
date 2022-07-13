@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2950191786
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: testscene_plantworld
+      Dependencies: {}
+    Info_1:
+      Name: character_bundle
+      Dependencies: {}
