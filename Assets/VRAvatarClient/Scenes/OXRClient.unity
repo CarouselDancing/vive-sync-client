@@ -3453,6 +3453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591781515}
   - component: {fileID: 1591781514}
+  - component: {fileID: 1591781516}
   m_Layer: 0
   m_Name: AssetLoaded
   m_TagString: Untagged
@@ -3474,8 +3475,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assetbundlename: 
   gameobject: 
-  scenebundlename: testscene_plantworld
-  scenename: ModifiedEnvironment_V1_no_logic
   characterbundle: character_bundle
   charactername: CharacterFBX
 --- !u!4 &1591781515
@@ -3493,6 +3492,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1591781516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591781513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49cda36121e5410499abec2c4af8c9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://drive.google.com/uc?export=download&id=1QvF47Yarzp14dctRm8u1h9CO_HNZ88UO
+  bundle: {fileID: 0}
 --- !u!1 &1650714313
 GameObject:
   m_ObjectHideFlags: 0
