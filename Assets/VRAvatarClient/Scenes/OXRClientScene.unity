@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 68253998}
   - component: {fileID: 68253997}
   m_Layer: 5
-  m_Name: ActivatePairDance
+  m_Name: ActivateMirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1901,7 +1901,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start Pair Dance
+  m_Text: Activate Mirror
 --- !u!222 &1397149317
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2499,7 +2499,7 @@ GameObject:
   - component: {fileID: 1499921847}
   - component: {fileID: 1499921846}
   m_Layer: 5
-  m_Name: DeactivatePairDance
+  m_Name: DeactivateMirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3183,7 +3183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stop Pair Dance
+  m_Text: Deactivate Mirror
 --- !u!222 &1884572219
 CanvasRenderer:
   m_ObjectHideFlags: 0
