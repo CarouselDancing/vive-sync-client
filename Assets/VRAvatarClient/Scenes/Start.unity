@@ -272,7 +272,6 @@ GameObject:
   - component: {fileID: 116728057}
   - component: {fileID: 116728056}
   - component: {fileID: 116728055}
-  - component: {fileID: 116728062}
   m_Layer: 5
   m_Name: 'Canvas '
   m_TagString: Untagged
@@ -445,20 +444,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 4.79}
   m_SizeDelta: {x: 544, y: 590}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &116728062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116728054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 410904c1d7f58e04eb3bb39fed3947bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingscreen: {fileID: 618455261}
-  slider: {fileID: 1466634404}
 --- !u!1 &137664933
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,8 +620,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 116728062}
-        m_TargetAssemblyTypeName: SceneMenu, Assembly-CSharp
+      - m_Target: {fileID: 2312243950159652061}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
         m_MethodName: EnterScene
         m_Mode: 6
         m_Arguments:
@@ -4278,8 +4263,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 116728062}
-        m_TargetAssemblyTypeName: SceneMenu, Assembly-CSharp
+      - m_Target: {fileID: 2312243950159652061}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -5522,8 +5507,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 116728062}
-        m_TargetAssemblyTypeName: SceneMenu, Assembly-CSharp
+      - m_Target: {fileID: 2312243950159652061}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
         m_MethodName: EnterScene
         m_Mode: 6
         m_Arguments:
@@ -6891,9 +6876,6 @@ MonoBehaviour:
   server: 0
   client: 0
   scene: main
-  ClientSceneName: OXRClientScene
-  ServerSceneName: ServerScene
-  loadAdditiveScene: 1
 --- !u!1 &2424824290697311333
 GameObject:
   m_ObjectHideFlags: 0
