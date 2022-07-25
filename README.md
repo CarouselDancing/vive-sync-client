@@ -20,7 +20,7 @@ The client will spawn an avatar in the scene driven by the headset, hand control
 1. Open the scene Assets\VRAvatarClient\Scenes\Start.unity
 2. Configure mirror and the trackers in the file Assets\Resources\config.json 
    2. An url and a port need to be provided to join a server
-   3. The avatar can be specified in "rpmURL" "which can be recieved by creating a ReadyPlayerMe account
+   3. The avatar can be specified in "rpmURL". The URL can be recieved by creating a ReadyPlayerMe account
    4. Optional hip and foot trackers can be activated. Tracker ids are ignored in OpenXR version.
 3. Press Play
 4. Press on Host or Join
