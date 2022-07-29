@@ -2,15 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Selectable_Asset : MonoBehaviour
 {
     public List <GameObject> partner;
     GameObject button;
-    public GameObject buttonPrefab;
-    public GameObject panel;
+    public GameObject buttonPrefab, panel;
     
-   
+    
+    void Start(){
+     partner = new List<GameObject>();
+     GameObject empty = new GameObject("Emptygameobject");
+     partner.Add(empty);
+     }
+
     public void Selectable(){
         Debug.Log("Object is Pointed");
      
@@ -23,37 +29,23 @@ public class Selectable_Asset : MonoBehaviour
     public void Unselect(){
         UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject (null);
         Debug.Log("UnSelected");
-
-
+    
     }
    public void storelist(GameObject go){
 
-       Debug.Log(go.name);
        if(go != null && !partner.Contains(go)){
-        partner.Add(go);
-
-       }
-   }
-   public void clearlist(){
-      partner.Clear();
+        partner[0] = go;
+ }
    }
 
-
-public void print(){
-    
-    foreach (var item in partner)
+   public void print(){
+      foreach (var item in partner)
         {
-            /// Instantiates the button /// 
+            ///Things to do. updating the gameobject in the canvas //
+            /// Instantiates the button/// 
             button = (GameObject)Instantiate(buttonPrefab);
             button.transform.SetParent(panel.transform, false);
-            button.GetComponent<Button>().onClick.AddListener(OnClick);
-            button.transform.GetChild(0).GetComponent<Text>().text = item.name;   
+            button.transform.GetChild(0).GetComponent<Text>().text = item.name; 
         }
-     }
-
-void OnClick()
-    {
-        Debug.Log("clicked!");
-      
     }
 }
