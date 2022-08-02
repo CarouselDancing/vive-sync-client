@@ -5,13 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using Newtonsoft.Json;
 
-public struct ServerEntry{
-    public string name;
-    public string address;
-    public int port;
-    public string protocol;
-
-}
 
 public class MainMenuController : MonoBehaviour
 {
