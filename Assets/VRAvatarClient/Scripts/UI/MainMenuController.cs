@@ -28,6 +28,15 @@ public class MainMenuController : MonoBehaviour
         manager = MirrorGameManager.Instance;
     }
 
+    public void Host(){
+        manager.HostServer();
+    }   
+    
+     public void ExitGame(){
+        manager.ExitGame();
+    }
+
+
     public void ShowServerList(){
         state = MenuState.SERVER_LIST;
         ClearServerList();
