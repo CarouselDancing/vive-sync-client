@@ -16,15 +16,30 @@ public class MainMenuControllerEditor : Editor
         DrawDefaultInspector();
         MainMenuController c = (MainMenuController)target;
     
+		if (GUILayout.Button("Host"))
+        {
+
+           c.Host();
+        }
         if (GUILayout.Button("Join"))
         {
 
            c.ShowServerList();
         }
+		if (GUILayout.Button("Settings"))
+        {
+
+           c.ShowSettings();
+        }
 		if (GUILayout.Button("Back"))
         {
 
            c.ShowMain();
+        }
+		if (GUILayout.Button("ExitGame"))
+        {
+
+           c.ExitGame();
         }
     }
 }
