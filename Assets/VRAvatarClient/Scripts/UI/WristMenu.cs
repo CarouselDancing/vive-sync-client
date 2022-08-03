@@ -18,10 +18,21 @@ public class WristMenu : MonoBehaviour
   public Canvas canvas;
   public Transform leftController, rightController;
   public Vector3 offset;
-  
+  public bool active = true;
+  public static WristMenu Instance;
+
+    void Awake(){
+        
+        if(Instance == null){
+            Instance = this;
+        }else{
+            GameObject.DestroyImmediate(gameObject); //singleton monobehavior
+        }
+    }
 
 
   public void ToggleLeft(){
+    if(!active)return;
     if (state == WristMenuState.CLOSED){
       state = WristMenuState.LEFT;
       Show();
@@ -35,6 +46,7 @@ public class WristMenu : MonoBehaviour
   }
 
   public void ToggleRight(){
+    if(!active)return;
     if (state == WristMenuState.CLOSED){
       state = WristMenuState.RIGHT;
       Show();
@@ -55,6 +67,16 @@ public class WristMenu : MonoBehaviour
     public void Hide(){
         canvas.enabled = false;
 
+    }
+
+    
+    public void Activate(){
+        active = true;
+    }   
+    
+    public void Deactivate(){
+        Hide();
+        active = false;
     }
 
 }

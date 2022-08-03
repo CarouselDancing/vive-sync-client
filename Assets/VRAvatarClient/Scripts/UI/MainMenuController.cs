@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Newtonsoft.Json;
+using UnityEngine.Events;
 
 [Serializable]
 public struct SettingsElements{
@@ -89,10 +90,14 @@ public class MainMenuController : MonoBehaviour
 
     public List<GameObject> serverList;
     public SettingsElements settingsElements;
+    WristMenu wristMenu;
 
     public void Start(){
         serverList = new List<GameObject>();
+        wristMenu = WristMenu.Instance;
         manager = MirrorGameManager.Instance;
+        manager.onStart.AddListener(wristMenu.Activate);
+        manager.onStop.AddListener(wristMenu.Deactivate);
     }
 
     public void Host(){
