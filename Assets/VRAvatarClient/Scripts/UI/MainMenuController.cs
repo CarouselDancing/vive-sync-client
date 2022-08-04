@@ -177,7 +177,7 @@ public class MainMenuController : MonoBehaviour
         foreach (var s in newServerEntries) {
             var so = GameObject.Instantiate(entryPrefab, contentObject.transform);
             var t = so.GetComponentInChildren<Text>();
-            t.text = s.address;
+            t.text = s.protocol+":"+s.address+":"+s.port.ToString();
             var b = so.GetComponent<Button>();
             b.onClick.AddListener(() => {
                 manager.JoinServer(s.address, s.protocol, s.port);
