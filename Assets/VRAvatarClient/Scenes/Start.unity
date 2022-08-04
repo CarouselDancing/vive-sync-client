@@ -12674,6 +12674,7 @@ MonoBehaviour:
     url: localhost
     port: 7777
     rpmURL: https://d1a370nemizbjq.cloudfront.net/209a1bc2-efed-46c5-9dfd-edc8a1d9cbe4.glb
+    protocol: kcp
     activateHipTracker: 0
     activateFootTrackers: 0
     hipTracker:
@@ -12691,12 +12692,22 @@ MonoBehaviour:
     activateDebugVis: 0
     networkMode: 
   player: {fileID: 0}
+  networkManagerPrefabs:
+    kcp: {fileID: 3914423116585785753, guid: 59bf8a9113e90a6418a9f7b5ee605573, type: 3}
+    telepathy: {fileID: 110494541167015421, guid: ce3e1d7fcb474db4e9c76f00a6c6427c,
+      type: 3}
   host: 0
   server: 0
   client: 0
   menuScene: Menu
   mainScene: main
   loadAsync: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2312243950159652062
 Transform:
   m_ObjectHideFlags: 0
