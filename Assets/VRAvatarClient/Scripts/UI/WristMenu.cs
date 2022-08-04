@@ -16,7 +16,8 @@ public class WristMenu : MonoBehaviour
   WristMenuState state = WristMenuState.CLOSED;
   public Transform canvasParent;
   public Canvas canvas;
-  public Transform leftController, rightController;
+  //public Transform leftController, rightController;
+  public Transform XRrig;
   public Vector3 offset;
   public bool active = true;
   public static WristMenu Instance;
@@ -36,7 +37,7 @@ public class WristMenu : MonoBehaviour
     if (state == WristMenuState.CLOSED){
       state = WristMenuState.LEFT;
       Show();
-      canvasParent.SetParent(leftController.transform);
+      canvasParent.SetParent(XRrig.transform);
       canvasParent.localPosition = offset;
     }else if(state == WristMenuState.LEFT){
       state = WristMenuState.CLOSED;
@@ -50,7 +51,7 @@ public class WristMenu : MonoBehaviour
     if (state == WristMenuState.CLOSED){
       state = WristMenuState.RIGHT;
       Show();
-      canvasParent.SetParent(rightController.transform);
+      canvasParent.SetParent(XRrig.transform);
       canvasParent.localPosition = offset;
     }else if(state == WristMenuState.RIGHT){
       state = WristMenuState.CLOSED;
