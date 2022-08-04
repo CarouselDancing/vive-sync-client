@@ -1,0 +1,1 @@
+This Package was developed by Peter Koch and provided as part of a tutorial on http://talesfromtherift.com/vr-canvas-keyboard/

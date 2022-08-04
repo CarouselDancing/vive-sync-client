@@ -20,15 +20,16 @@ public class WristMenu : MonoBehaviour
   public Vector3 offset;
   public bool active = true;
   public static WristMenu Instance;
+  public GameObject canvasKeyboard;
 
-    void Awake(){
-        
-        if(Instance == null){
-            Instance = this;
-        }else{
-            GameObject.DestroyImmediate(gameObject); //singleton monobehavior
-        }
-    }
+  void Awake(){
+      
+      if(Instance == null){
+          Instance = this;
+      }else{
+          GameObject.DestroyImmediate(gameObject); //singleton monobehavior
+      }
+  }
 
 
   public void ToggleLeft(){
