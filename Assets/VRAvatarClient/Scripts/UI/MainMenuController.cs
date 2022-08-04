@@ -7,9 +7,16 @@ using UnityEngine.UI;
 using Newtonsoft.Json;
 using UnityEngine.Events;
 
+
+public enum MirrorProtocolOptions{
+    KCP = 0,
+    TELEPATHY = 1
+}
+
 [Serializable]
 public struct SettingsElements{
 
+    public Dropdown protocolDropdown;
     public Toggle hipTrackerToggle;
     public Toggle footTrackersToggle;
     public InputField hipPosOffset;
@@ -30,6 +37,11 @@ public struct SettingsElements{
 
         StringToArray(rightFootPosOffset.text, ref config.rightFootTracker.posOffset, 3);
         StringToArray(rightFootRotOffset.text, ref config.rightFootTracker.rotOffset, 3);
+        if (protocolDropdown.value == (int)MirrorProtocolOptions.KCP){
+            config.protocol = "kcp";
+        }else{
+            config.protocol = "telepathy";
+        }
     }
 
     public void Show(ref ClientConfig config){
@@ -41,6 +53,13 @@ public struct SettingsElements{
         leftFootRotOffset.text = ArrayToString(config.leftFootTracker.rotOffset, 3);
         rightFootPosOffset.text = ArrayToString(config.rightFootTracker.posOffset, 3);
         rightFootRotOffset.text = ArrayToString(config.rightFootTracker.rotOffset, 3);
+        if (config.protocol  == "kcp"){
+            protocolDropdown.value = (int)MirrorProtocolOptions.KCP;
+        }else{
+            protocolDropdown.value = (int)MirrorProtocolOptions.TELEPATHY;
+        }
+
+        
 
     }
 
@@ -100,7 +119,13 @@ public class MainMenuController : MonoBehaviour
         manager.onStop.AddListener(wristMenu.Deactivate);
     }
 
+    public void Destroy(){
+
+    }
+
+
     public void Host(){
+        
         manager.HostServer();
     }   
     
@@ -155,7 +180,7 @@ public class MainMenuController : MonoBehaviour
             t.text = s.address;
             var b = so.GetComponent<Button>();
             b.onClick.AddListener(() => {
-                manager.JoinServer(s.address);
+                manager.JoinServer(s.address, s.protocol, s.port);
             });
             serverList.Add(so);
         }
