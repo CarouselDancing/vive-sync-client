@@ -15,15 +15,13 @@ Before opening the project you need to download the data using the PowerShell sc
 
 ## Starting the client from the Editor
 
-The client will spawn an avatar in the scene driven by the headset, hand controllers and Vive Trackers.
-
-1. Open the scene Assets\VRAvatarClient\Scenes\Start.unity
-2. Configure mirror and the trackers in the file Assets\Resources\config.json 
-   2. An url and a port need to be provided to join a server
-   3. The avatar can be specified in "rpmURL". The URL can be recieved by creating a ReadyPlayerMe account
-   4. Optional hip and foot trackers can be activated. Tracker ids are ignored in OpenXR version.
-3. Press Play
-4. Press on Host or Join
+1. Optional: Configure avatar in the file Assets\Resources\config.json in the field  "rpmURL" ( The URL can be recieved by creating a ReadyPlayerMe account)
+2. Open the scene Assets\VRAvatarClient\Scenes\Start.unity and press on play
+3. The user will start alone in a menu scene with the options Host, Join, Settings or Exit.
+   1. Settings: to activate hip and foot trackers and change the protocol (KCP or Telepathy)
+   2. Host: Start a server using the selected protocol. Other players can see it now in the server list
+   3. Join: Display the server list. Double click a server to join. The protocol is automatically adjusted based on the server
+4. In the main scene the avatar is driven by the headset, hand controllers and Vive Trackers.
 
 ## Controls
 
