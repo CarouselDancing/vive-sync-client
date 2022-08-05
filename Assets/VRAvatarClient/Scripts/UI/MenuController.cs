@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
     public static MenuController Instance;
     MirrorGameManager manager;
     public UserMenuCanvas ingameMenu;
-    public MainMenuController lobbyMenu;
+    public LobbyMenuCanvas lobbyMenu;
 
 
     void Awake(){

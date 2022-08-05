@@ -90,7 +90,7 @@ public struct SettingsElements{
     }
 }
 
-public class MainMenuController : MonoBehaviour
+public class LobbyMenuCanvas : MonoBehaviour
 {
     public enum MenuState{
         MAIN,

@@ -7,14 +7,14 @@ namespace Carousel{
 
 namespace BaselineAgent{
 
-[CustomEditor(typeof(MainMenuController))]
-public class MainMenuControllerEditor : Editor
+[CustomEditor(typeof(LobbyMenuCanvas))]
+public class LobbyMenuCanvasEditor : Editor
 
 {
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
-        MainMenuController c = (MainMenuController)target;
+        LobbyMenuCanvas c = (LobbyMenuCanvas)target;
     
 		if (GUILayout.Button("Host"))
         {
