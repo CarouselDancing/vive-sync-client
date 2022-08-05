@@ -97,6 +97,7 @@ public class MainMenuController : MonoBehaviour
         SERVER_LIST,
         SETTINGS
     }
+    public Canvas canvas;
     public GameObject mainPanel;
     public GameObject serverListPanel; 
     public GameObject settingsPanel; 
@@ -106,33 +107,26 @@ public class MainMenuController : MonoBehaviour
     public string method;
 
     MirrorGameManager manager;
+    MenuController menuController;
 
     public List<GameObject> serverList;
     public SettingsElements settingsElements;
-    WristMenu wristMenu;
 
     public void Start(){
         serverList = new List<GameObject>();
-        wristMenu = WristMenu.Instance;
         manager = MirrorGameManager.Instance;
-        manager.onStart.AddListener(wristMenu.Activate);
-        manager.onStop.AddListener(wristMenu.Deactivate);
+        menuController = MenuController.Instance;
     }
 
-    public void Destroy(){
-
-    }
-
+ 
 
     public void Host(){
-        
-        manager.HostServer();
+        menuController.Host();
     }   
     
      public void ExitGame(){
-        manager.ExitGame();
+        menuController.ExitGame();
     }
-
 
     public void ShowServerList(){
         state = MenuState.SERVER_LIST;
@@ -180,7 +174,7 @@ public class MainMenuController : MonoBehaviour
             t.text = s.protocol+":"+s.address+":"+s.port.ToString();
             var b = so.GetComponent<Button>();
             b.onClick.AddListener(() => {
-                manager.JoinServer(s.address, s.protocol, s.port);
+                menuController.JoinServer(s.address, s.protocol, s.port);
             });
             serverList.Add(so);
         }
@@ -194,5 +188,13 @@ public class MainMenuController : MonoBehaviour
         serverList = new List<GameObject>();
     }
 
+    public void Show(){
+        canvas.enabled = true;
+    }
+
+    public void Hide(){
+        canvas.enabled = false;
+
+    }
 
 }

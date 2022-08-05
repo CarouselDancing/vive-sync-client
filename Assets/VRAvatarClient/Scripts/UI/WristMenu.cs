@@ -11,26 +11,12 @@ public enum WristMenuState{
     RIGHT
 }
 
-public class WristMenu : MonoBehaviour
+public class WristMenu : UserMenuCanvas
 {
   WristMenuState state = WristMenuState.CLOSED;
   public Transform canvasParent;
-  public Canvas canvas;
   public Transform leftController, rightController;
   public Vector3 offset;
-  public bool active = true;
-  public static WristMenu Instance;
-  public GameObject canvasKeyboard;
-
-  void Awake(){
-      
-      if(Instance == null){
-          Instance = this;
-      }else{
-          GameObject.DestroyImmediate(gameObject); //singleton monobehavior
-      }
-  }
-
 
   public void ToggleLeft(){
     if(!active)return;
@@ -61,23 +47,6 @@ public class WristMenu : MonoBehaviour
   }
 
   
-    public void Show(){
-        canvas.enabled = true;
-    }
 
-    public void Hide(){
-        canvas.enabled = false;
-
-    }
-
-    
-    public void Activate(){
-        active = true;
-    }   
-    
-    public void Deactivate(){
-        Hide();
-        active = false;
-    }
 
 }
