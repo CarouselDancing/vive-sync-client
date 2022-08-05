@@ -78,6 +78,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "menu",
+                    "type": "Button",
+                    "id": "d1edc4ef-6870-4064-a9d0-9a58a9ced39f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "primary",
+                    "type": "Button",
+                    "id": "63c64da2-2622-4cc4-a7f5-c10c4a21e902",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "secondary",
+                    "type": "Button",
+                    "id": "5c32f2d9-4d49-4278-afb7-714a5ac57566",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -100,6 +127,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "41065a05-bf10-4830-a997-4986fcb85c02",
+                    "path": "<XRController>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73ace158-90d3-4368-9729-1315267ac8e0",
+                    "path": "<XRController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6cd80a42-f424-4eca-b234-d2d07a8a4b9f",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "secondary",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -126,6 +186,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "menu",
+                    "type": "Button",
+                    "id": "4fbe39b9-6f3c-4a72-9033-1705bd6a0147",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "primary",
+                    "type": "Button",
+                    "id": "821c7462-bc4e-4f6e-a8fc-5be00207c199",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "secondary",
+                    "type": "Button",
+                    "id": "fc230abd-2432-4e3e-b83a-2e3b2e8f00c5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -148,6 +235,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b46fc76-0de2-4f91-9f74-25bd84793e63",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20234c6c-a7e3-41da-8a47-131b1521097a",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7db9616f-d0e0-4bfa-b29a-b000fe4c8a38",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "secondary",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
