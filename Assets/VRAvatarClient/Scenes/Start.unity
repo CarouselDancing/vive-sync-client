@@ -167,16 +167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5014147962766493800, guid: 0157bd60f98673445beff00a9a78d6fd,
-        type: 3}
-      propertyPath: m_Name
-      value: ExitToLobby
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014147962766493806, guid: 0157bd60f98673445beff00a9a78d6fd,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitToLobby
-      objectReference: {fileID: 0}
     - target: {fileID: 5014147963117883506, guid: 0157bd60f98673445beff00a9a78d6fd,
         type: 3}
       propertyPath: m_TargetTexture
