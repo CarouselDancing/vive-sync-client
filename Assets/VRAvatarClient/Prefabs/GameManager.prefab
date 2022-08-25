@@ -39498,7 +39498,8 @@ GameObject:
   - component: {fileID: 5014147963891269629}
   - component: {fileID: 5014147963891269630}
   - component: {fileID: 5014147963891269628}
-  - component: {fileID: 5014147963891269603}
+  - component: {fileID: 1753815704}
+  - component: {fileID: 1753815705}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -39568,7 +39569,7 @@ MonoBehaviour:
   activateOrientation: 1
   timer: 0
   inputInterval: 0.5
---- !u!114 &5014147963891269603
+--- !u!114 &1753815704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39577,13 +39578,85 @@ MonoBehaviour:
   m_GameObject: {fileID: 5014147963891269631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e155f16ddafd324c86c29f2283a8788, type: 3}
+  m_Script: {fileID: 11500000, guid: 65e069324aa62384eb25abe0289bb753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftAction: {fileID: 3580743572532259738, guid: f41009b51710c694b9c150f27982fb97,
+  inputAction: {fileID: 7632460252300888220, guid: f41009b51710c694b9c150f27982fb97,
     type: 3}
-  rightAction: {fileID: 7632460252300888220, guid: f41009b51710c694b9c150f27982fb97,
+  OnPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314805251611309134}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
+        m_MethodName: GrabRightHand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314805251611309134}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
+        m_MethodName: ReleaseRightHand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1753815705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5014147963891269631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e069324aa62384eb25abe0289bb753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputAction: {fileID: 3580743572532259738, guid: f41009b51710c694b9c150f27982fb97,
     type: 3}
+  OnPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314805251611309134}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
+        m_MethodName: GrabLeftHand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314805251611309134}
+        m_TargetAssemblyTypeName: MirrorGameManager, Assembly-CSharp
+        m_MethodName: ReleaseLeftHand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5014147963902138553
 GameObject:
   m_ObjectHideFlags: 0
@@ -41248,6 +41321,7 @@ MonoBehaviour:
   rightFootTarget: {fileID: 5912667418767439690}
   headTrackerTarget: {fileID: 5014147964602684525}
   origin: {fileID: 5014147963891269629}
+  user: {fileID: 0}
 --- !u!114 &5014147964602684525
 MonoBehaviour:
   m_ObjectHideFlags: 0

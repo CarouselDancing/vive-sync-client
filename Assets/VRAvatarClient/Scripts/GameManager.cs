@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 //using Valve.VR;
 using Carousel.BaselineAgent;
+using UnityEngine.XR;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
