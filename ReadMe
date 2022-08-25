@@ -1,0 +1,4 @@
+Replace Lefthand animation Controller with Idle animationController in Assets/BaselineAgent/Prefab/RPMUserAvatar.prefab
+Add Following Lines of Code in RPMUserAvatar Script under "OnRPMAvatarLoaded" method.
+handanimation = avatar.AddComponent<Handanimation>();
+handanimation.speed = 5;
