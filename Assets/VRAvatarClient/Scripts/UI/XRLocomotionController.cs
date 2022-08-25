@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using Carousel.BaselineAgent;
 
 
 public class XRLocomotionController : MonoBehaviour
@@ -23,6 +25,11 @@ public class XRLocomotionController : MonoBehaviour
     public bool IsPressed { get; private set; }
     public float timer;
     public float inputInterval = 0.5f;
+
+    void Awake(){
+        
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Update()
     {
@@ -65,14 +72,40 @@ public class XRLocomotionController : MonoBehaviour
         yAngle += 45 * sign;
         yAngle %= 360;
         var rootRotation = Quaternion.Euler(new Vector3(0, yAngle, 0));
+        Rotate(rootRotation);
+
+    }
+
+    void Rotate(Quaternion q){
         var oldPosition = head.position;
-        root.rotation = rootRotation;
+        root.rotation = q;
         var delta = oldPosition - head.position;
         root.position += delta;
+    }
 
-        
+    
+    public void MoveToNearestAgent(){
+        var game = MirrorGameManager.Instance;
+        if (game== null) {
+           Debug.Log("no instance found");
+           return;
+        }
+        var user = game.player;
+        if (user== null) {
+           Debug.Log("no user found");
+           return;
+        }
+         NetworkAgentController agent = (NetworkAgentController)GameObject.FindObjectsOfTypeAll(typeof(NetworkAgentController)).FirstOrDefault();
+         if(agent== null){
+           Debug.Log("no agent found");
+           return;
+         }
+        RPMUserAvatar userAvatar = user.GetComponent<RPMUserAvatar>(); 
+        var delta = agent.transform.position - userAvatar.interactionZone.partnerTarget.position;
 
-        
+        root.position += delta;
+        Rotate(user.transform.rotation);
+       
     }
 
 }
