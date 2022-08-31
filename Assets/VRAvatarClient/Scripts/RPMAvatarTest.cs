@@ -16,7 +16,7 @@ public class RPMAvatarTest : MonoBehaviour
     {
 
       
-        var config = GlobalGameState.GetInstance().config;
+        var config = ClientConfig.GetInstance();
         var avatarIndex = config.userAvatar;
         AvatarURL = config.rpmAvatars[avatarIndex].url;
         if (AvatarURL != "") SetupAvatarControllerFromRPM(AvatarURL);
@@ -43,19 +43,21 @@ public class RPMAvatarTest : MonoBehaviour
 
     public void OnRPMAvatarLoaded(GameObject avatar, AvatarMetaData metaData = null)
     {
-        bool activateFootRig = GlobalGameState.GetInstance().config.activateFootTrackers;
+        
+        var config = ClientConfig.GetInstance();
+        bool activateFootRig = config.activateFootTrackers;
         var ikRigBuilder = new RPMIKRigBuilder(animationController, activateFootRig);
-        var config = ikRigBuilder.Build(avatar);
-        SetupRig(config, avatar);
+        var rigConfig = ikRigBuilder.Build(avatar);
+        SetupRig(rigConfig, avatar);
         Debug.Log($"Avatar loaded. [{Time.timeSinceLevelLoad:F2}]\n\n{metaData}");
         initiated = true;
     }
 
 
-    void SetupRig(CharacterRigConfig config, GameObject avatar)
+    void SetupRig(CharacterRigConfig rigConfig, GameObject avatar)
     {
         InitVRRig vrRig = avatar.AddComponent<InitVRRig>();
-        vrRig.SetupAvatarController(config, avatar);
+        vrRig.SetupAvatarController(rigConfig, avatar);
         var animator = avatar.GetComponent<Animator>();
         vrRig.ConnectTrackers();
     }
