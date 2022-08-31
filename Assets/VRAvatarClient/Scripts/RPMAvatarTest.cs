@@ -16,7 +16,9 @@ public class RPMAvatarTest : MonoBehaviour
     {
 
       
-        AvatarURL = GlobalGameState.GetInstance().config.rpmURL;
+        var config = GlobalGameState.GetInstance().config;
+        var avatarIndex = config.userAvatar;
+        AvatarURL = config.rpmAvatars[avatarIndex].url;
         if (AvatarURL != "") SetupAvatarControllerFromRPM(AvatarURL);
         processing = true;
       

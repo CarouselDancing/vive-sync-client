@@ -8,6 +8,10 @@ using Newtonsoft.Json;
 using UnityEngine.Events;
 
 
+public enum AvatarModels{
+    FEMALE = 0,
+    MALE = 1
+}
 public enum MirrorProtocolOptions{
     KCP = 0,
     TELEPATHY = 1
@@ -16,6 +20,7 @@ public enum MirrorProtocolOptions{
 [Serializable]
 public struct SettingsElements{
 
+    public Dropdown avatarDropdown;
     public Dropdown protocolDropdown;
     public Toggle hipTrackerToggle;
     public Toggle footTrackersToggle;
@@ -42,6 +47,11 @@ public struct SettingsElements{
         }else{
             config.protocol = "telepathy";
         }
+        if (avatarDropdown.value == (int)AvatarModels.FEMALE){
+            config.userAvatar = avatarDropdown.value;
+        }else{
+            config.userAvatar = avatarDropdown.value;
+        }
     }
 
     public void Show(ref ClientConfig config){
@@ -57,6 +67,11 @@ public struct SettingsElements{
             protocolDropdown.value = (int)MirrorProtocolOptions.KCP;
         }else{
             protocolDropdown.value = (int)MirrorProtocolOptions.TELEPATHY;
+        }
+        if (config.userAvatar  == 0){
+            avatarDropdown.value = (int)AvatarModels.FEMALE;
+        }else{
+            avatarDropdown.value = (int)AvatarModels.MALE;
         }
 
         
