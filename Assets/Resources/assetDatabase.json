@@ -1,0 +1,4 @@
+{ "assetList":[
+	{"assetName": "PlantWorld", "bundleName":"plantworld", "isScene": false, "scale": {"x":2,"y":2,"z":2}, "isRemote": false}
+]
+}

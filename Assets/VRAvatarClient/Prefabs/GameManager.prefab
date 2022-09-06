@@ -38275,7 +38275,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   registerServerOnline: 0
-  loadingScreenUI:
+  loadingScreen:
     gameObject: {fileID: 5014147964594499662}
     progessbar: {fileID: 5014147962755924023}
     infoText: {fileID: 5014147963126233659}
