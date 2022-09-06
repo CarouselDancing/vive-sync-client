@@ -37922,7 +37922,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
@@ -38235,8 +38235,6 @@ MonoBehaviour:
   url: motion.dfki.de
   usePort: 1
   usePortWorkAround: 1
-  loadingscreen: {fileID: 5014147964594499662}
-  slider: {fileID: 5014147962755924023}
   debugMessage: {fileID: 0}
   userMenu: {fileID: 0}
   config:
@@ -38256,8 +38254,12 @@ MonoBehaviour:
     rightFootTracker:
       posOffset: []
       rotOffset: []
-    activateDebugVis: 0
-    networkMode: 
+    leftControllerTracker:
+      posOffset: []
+      rotOffset: []
+    rightControllerTracker:
+      posOffset: []
+      rotOffset: []
   player: {fileID: 0}
   networkManagerPrefabs:
     kcp: {fileID: 3914423116585785753, guid: 59bf8a9113e90a6418a9f7b5ee605573, type: 3}
@@ -38266,15 +38268,18 @@ MonoBehaviour:
   host: 0
   server: 0
   client: 0
-  lobbyScene: Lobby
-  mainScene: main
-  loadAsync: 0
   onStart:
     m_PersistentCalls:
       m_Calls: []
   onStop:
     m_PersistentCalls:
       m_Calls: []
+  registerServerOnline: 0
+  loadingScreenUI:
+    gameObject: {fileID: 5014147964594499662}
+    progessbar: {fileID: 5014147962755924023}
+    infoText: {fileID: 5014147963126233659}
+  sceneLoader: {fileID: 0}
 --- !u!1 &5014147963333077584
 GameObject:
   m_ObjectHideFlags: 0
