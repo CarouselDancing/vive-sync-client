@@ -27,9 +27,11 @@ Before opening the project you need to download the data using the PowerShell sc
 
 You can move into the direction of your orientation using the right tackpad and rotate using the left track pad.
 
-Pressing the left or right menu button opens a menu. The menu contains buttons to interact with the agent (Toggle Follower), set the height of the avatar and return to the main scene.
+Pressing the left or right menu button opens a menu. The menu contains buttons to interact with the agent, set the height of the avatar and return to the main scene.
 
+You can interact with an agent by getting close enough so that an outline appears. To initiate interaction you need to press on "Toggle Follower".
 
+This connects the agent with you so it will try to stay in front of you using dance motion. In this mode you can change the dance style and activate a mirror mode for the upper body. It is also possible to hold hands with the agent by pressing the grip buttons. The hands of the agent should automatically move towards your hands.
 
 
 
