@@ -18,16 +18,18 @@ Before opening the project you need to download the data using the PowerShell sc
 1. Optional: Configure avatar in the file Assets\Resources\config.json in the field  "rpmURL". (The URL can be recieved by creating a ReadyPlayerMe account)
 2. Open the scene Assets\VRAvatarClient\Scenes\Start.unity and press on play
 3. The user will start alone in a menu scene with the options Host, Join, Settings or Exit.
-   1. Settings: Activate hip and foot trackers and change the protocol (KCP or Telepathy). In order for the Vive trackers to be recognized they need to be assigend to "WAIST", "LEFT FOOT" and "RIGHT FOOT" in the Manage Tracker settings of SteamVR.
+   1. Settings: Change user avatar, option to activate hip and foot trackers and change the protocol (KCP or Telepathy). In order for the Vive trackers to be recognized they need to be assigend to "WAIST", "LEFT FOOT" and "RIGHT FOOT" in the Manage Tracker settings of SteamVR.
    2. Host: Start a server using the selected protocol. Other players can see it now in the server list.
    3. Join: Display the server list. Double click a server to join. The protocol is automatically adjusted based on the server
 4. In the main scene the avatar is driven by the headset, hand controllers and Vive Trackers.
 
 ## Controls
 
-You can move into the direction of your orientation using the right tackpad.
+You can move into the direction of your orientation using the right tackpad and rotate using the left track pad.
 
-Pressing the left or right trigger opens a menu attached to the wrist. The menu contains buttons for spawning and deleting simple agents with physics driven animation and external balance. Buttons can be pressed by pointing at them using the other hand and pressing the trigger button. 
+Pressing the left or right menu button opens a menu. The menu contains buttons to interact with the agent (Toggle Follower), set the height of the avatar and return to the main scene.
+
+
 
 
 
