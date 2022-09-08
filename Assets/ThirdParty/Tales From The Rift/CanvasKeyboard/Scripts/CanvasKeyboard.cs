@@ -4,18 +4,18 @@ using System.Collections;
 using System.Reflection;
 using UnityEngine.EventSystems;
 
-
+namespace TalesFromTheRift
+{
 	public class CanvasKeyboard : MonoBehaviour 
 	{
 		#region CanvasKeyboard Instantiation
 
-  
 		public enum CanvasKeyboardType
 		{
 			ASCIICapable
 		}
 		
-	/*	public static CanvasKeyboard Open(Canvas canvas=null, GameObject inputObject = null, CanvasKeyboardType keyboardType = CanvasKeyboardType.ASCIICapable)
+		public static CanvasKeyboard Open(Canvas canvas, GameObject inputObject = null, CanvasKeyboardType keyboardType = CanvasKeyboardType.ASCIICapable)
 		{
 			// Don't open the keyboard if it is already open for the current input object
 			CanvasKeyboard keyboard = GameObject.FindObjectOfType<CanvasKeyboard>();
@@ -36,7 +36,7 @@ using UnityEngine.EventSystems;
 			{
 				kb.CloseKeyboard();
 			}
-		}*/
+		}
 		
 		public static bool IsOpen 
 		{
@@ -112,9 +112,7 @@ using UnityEngine.EventSystems;
 
 		public void CloseKeyboard()
 		{
-			//Destroy(gameObject);
-			
-        	transform.parent.gameObject.SetActive(false);
+			Destroy(gameObject);
 		}
 
 		#endregion
@@ -148,3 +146,4 @@ using UnityEngine.EventSystems;
 		#endregion
 
 	}
+}
