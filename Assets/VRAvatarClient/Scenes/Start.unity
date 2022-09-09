@@ -262,5 +262,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7314805251611309134, guid: 0157bd60f98673445beff00a9a78d6fd,
+        type: 3}
+      propertyPath: registerServerOnline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314805251611309134, guid: 0157bd60f98673445beff00a9a78d6fd,
+        type: 3}
+      propertyPath: loadConfigFromStreamAssets
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0157bd60f98673445beff00a9a78d6fd, type: 3}
