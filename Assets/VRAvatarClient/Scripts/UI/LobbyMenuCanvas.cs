@@ -178,22 +178,29 @@ public class LobbyMenuCanvas : MonoBehaviour
 
 
     public void HandleServerList(string responseText){
+        if(manager.serverRegistry.defaultServerEntry != null) AddServerEntry(manager.serverRegistry.defaultServerEntry);
+
         JsonSerializer serializer = new JsonSerializer();
         Debug.Log(responseText);
         JsonReader reader = new JsonTextReader(new StringReader(responseText));
         var newServerEntries = serializer.Deserialize<List<ServerEntry>>(reader);
         foreach (var s in newServerEntries) {
-            var so = GameObject.Instantiate(entryPrefab, contentObject.transform);
-            var t = so.GetComponentInChildren<Text>();
-            t.text = s.protocol+":"+s.address+":"+s.port.ToString();
-            var b = so.GetComponent<Button>();
-            b.onClick.AddListener(() => {
-                menuController.JoinServer(s.address, s.protocol, s.port);
-            });
-            serverList.Add(so);
+           AddServerEntry(s);
         }
      
     }
+
+    void AddServerEntry(ServerEntry s){
+        var so = GameObject.Instantiate(entryPrefab, contentObject.transform);
+        var t = so.GetComponentInChildren<Text>();
+        t.text = s.protocol+":"+s.address+":"+s.port.ToString();
+        var b = so.GetComponent<Button>();
+        b.onClick.AddListener(() => {
+            menuController.JoinServer(s.address, s.protocol, s.port);
+        });
+        serverList.Add(so);
+    }
+
 
     void ClearServerList(){
         foreach (var s in serverList) {
