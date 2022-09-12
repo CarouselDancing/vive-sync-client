@@ -265,7 +265,7 @@ PrefabInstance:
     - target: {fileID: 7314805251611309134, guid: 0157bd60f98673445beff00a9a78d6fd,
         type: 3}
       propertyPath: registerServerOnline
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7314805251611309134, guid: 0157bd60f98673445beff00a9a78d6fd,
         type: 3}

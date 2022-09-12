@@ -119,7 +119,6 @@ public class LobbyMenuCanvas : MonoBehaviour
     public GameObject contentObject;
     public MenuState state;
     public GameObject entryPrefab;
-    public string method;
 
     MirrorGameManager manager;
     MenuController menuController;
@@ -173,7 +172,7 @@ public class LobbyMenuCanvas : MonoBehaviour
 
     public void FillServerList(){
         Debug.Log("fill server list");
-        StartCoroutine(manager.sendGETRequestCoroutine(method, HandleServerList));
+        manager.serverRegistry.FillServerList(HandleServerList);
     }
 
 
