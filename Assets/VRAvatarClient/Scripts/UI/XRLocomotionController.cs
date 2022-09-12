@@ -4,10 +4,11 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using Carousel;
 using Carousel.BaselineAgent;
 
 
-public class XRLocomotionController : MonoBehaviour
+public class XRLocomotionController : UserTransformController
 {
     
     public InputActionReference movementAction;
@@ -18,7 +19,6 @@ public class XRLocomotionController : MonoBehaviour
     public float orientationScale = 0.01f;
     public float movementScale = 0.01f;
     public Vector3 localDirection;
-    public Transform root;
     public Transform head;
     public bool activateMovement;
     public bool activateOrientation;
@@ -107,5 +107,4 @@ public class XRLocomotionController : MonoBehaviour
         Rotate(user.transform.rotation);
        
     }
-
 }

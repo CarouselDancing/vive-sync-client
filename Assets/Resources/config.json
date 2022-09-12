@@ -14,10 +14,13 @@
 	"activateDebugVis": false,
 	"networkMode": "host",
 	"protocol": "kcp",
+	"isObserver": false,
 	"serverRegistryConfig": {
 		"url": "motion.dfki.de",
 		"port": 8888,
-		"defaultServer": "91.12.30.16"
+		"defaultServer": "91.12.30.16",
+		"useLocalIP": false,
+		"publicIP": ""
 	}
 
 }
