@@ -160,6 +160,18 @@ RenderTexture:
   m_Dimension: 2
   m_VolumeDepth: 1
   m_ShadowSamplingMode: 2
+--- !u!114 &771435200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4326887124629812917, guid: 0157bd60f98673445beff00a9a78d6fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 5014147964113506451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5014147964113506451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,6 +179,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5014147962747370159, guid: 0157bd60f98673445beff00a9a78d6fd,
+        type: 3}
+      propertyPath: otherPlayerElements.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014147962747370159, guid: 0157bd60f98673445beff00a9a78d6fd,
+        type: 3}
+      propertyPath: otherPlayerElements.Array.data[1]
+      value: 
+      objectReference: {fileID: 771435200}
     - target: {fileID: 5014147963117883506, guid: 0157bd60f98673445beff00a9a78d6fd,
         type: 3}
       propertyPath: m_TargetTexture
@@ -282,5 +304,6 @@ PrefabInstance:
       propertyPath: m_ShowCustomSorter
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7517813006980146595, guid: 0157bd60f98673445beff00a9a78d6fd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0157bd60f98673445beff00a9a78d6fd, type: 3}
