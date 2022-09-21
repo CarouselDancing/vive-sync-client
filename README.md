@@ -10,7 +10,7 @@ git clone git@github.com:CarouselDancing/vive-sync-client.git --recursive
 
 The project requires Unity version 2021.3.5f1.
 
-Before opening the project you need to download the data using the PowerShell script /Assets/Resources/download_data.ps1
+Before opening the project you need to download the data using the PowerShell scripts /Assets/Resources/download_data.ps1 and /Assets/StreamingAssets/download_assets.ps1
 
 
 ## Starting the client from the Editor
