@@ -1,4 +1,4 @@
-# Client for ViveTracker based Avatar Synchronization using Mirror
+# Baseline agent application using vive tracker based avatars
 
 The repository contains a submodule shared with the [server](https://github.com/CarouselDancing/vive-sync-server) and needs to be cloned recursively:
 
@@ -21,7 +21,7 @@ Before opening the project you need to download the data using the PowerShell sc
    1. Settings: Change user avatar, option to activate hip and foot trackers and change the protocol (KCP or Telepathy). In order for the Vive trackers to be recognized they need to be assigend to "WAIST", "LEFT FOOT" and "RIGHT FOOT" in the Manage Tracker settings of SteamVR.
    2. Host: Start a server using the selected protocol. Other players can see it now in the server list.
    3. Join: Display the server list. Double click a server to join. The protocol is automatically adjusted based on the server
-4. In the main scene the avatar is driven by the headset, hand controllers and Vive Trackers.
+4. In the main scene the avatar is driven by the headset, hand controllers and optionally hip and foot trackers. Hip and foot trackers are deactivated on default and have to be activated in the config file or settings menu.
 
 ## Controls
 
