@@ -16,7 +16,6 @@ public class UserMenuCanvas : MonoBehaviour
   public GameObject GeneralCanvas;
   public Canvas thirdpersonCanvas;
   public Camera thirdpersonCam;
- // public Transform rawCam;
 
 
     void Awake(){
@@ -28,11 +27,7 @@ public class UserMenuCanvas : MonoBehaviour
       }
   }  
    
-   /*public void LeftMove(){
-            rawCam.transform.position += Vector3.left;
-
-    } */
-    public void Toggle(){
+      public void Toggle(){
         if(!active)return;
         if (!canvas.enabled){
             Show();
@@ -47,7 +42,11 @@ public class UserMenuCanvas : MonoBehaviour
 
     public void Hide(){
         canvas.enabled = false;
-
+        agentCanvas.SetActive(false);
+        OtherplayerCanvas.SetActive(false);
+        AvatarCanvas.SetActive(false);
+        GeneralCanvas.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void Activate(){
@@ -81,7 +80,7 @@ public class UserMenuCanvas : MonoBehaviour
         }
     public void otherplayerCanvasToggle(){
         if(!OtherplayerCanvas.active){
-            agentCanvas.SetActive(false);
+            agentCanvas.SetActive(true);
             OtherplayerCanvas.SetActive(true);
             AvatarCanvas.SetActive(false);
             GeneralCanvas.SetActive(false);
@@ -107,7 +106,7 @@ public class UserMenuCanvas : MonoBehaviour
         }
     public void generalCanvasToggle(){
         if(!GeneralCanvas.active){
-             agentCanvas.SetActive(false);
+             agentCanvas.SetActive(true);
             OtherplayerCanvas.SetActive(false);
             AvatarCanvas.SetActive(false);
             GeneralCanvas.SetActive(true);

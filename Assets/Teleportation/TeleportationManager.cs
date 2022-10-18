@@ -9,7 +9,6 @@ public class TeleportationManager : MonoBehaviour
   public List<GameObject> teleport;
   public bool teleportation = true;
   
-  
   private void Start(){
       teleport = new List<GameObject>();
     }
